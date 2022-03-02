@@ -1,7 +1,11 @@
 server:
   port: 8081
 spring:
-  datasource: jdbc:mysql://db.youngcloud.top:3306/framework_net
+  datasource:
+    url: jdbc:mysql://db.youngcloud.top:3306/framework_net
     username: root
     password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
