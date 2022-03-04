@@ -115,7 +115,7 @@ public class DDNSUtils {
         DDNSUtils ddnsUtils = new DDNSUtils();
         //查询指定二级域名的最新解析记录
         DescribeSubDomainRecordsRequest describeSubDomainRecordsRequest = new DescribeSubDomainRecordsRequest();
-        describeSubDomainRecordsRequest.setSubDomain("*.hanfeiyang.com");
+        describeSubDomainRecordsRequest.setSubDomain(rec + ".hanfeiyang.com");
         DescribeSubDomainRecordsResponse describeSubDomainRecordsResponse = ddnsUtils.describeSubDomainRecords(describeSubDomainRecordsRequest, client);
         log_print("describeSubDomainRecordsResponse",describeSubDomainRecordsResponse);
 

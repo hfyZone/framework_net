@@ -20,9 +20,9 @@ public class Param implements Serializable {
 
     private String uuid;
 
-    private String key;
+    private String paramKey;
 
-    private String value;
+    private String paramValue;
 
     private String type;
 
