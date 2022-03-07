@@ -1,12 +1,13 @@
 package com.hanfeiyang.framework;
 
-import com.hanfeiyang.framework.bussiness.ddns.service.IDdnsService;
+import com.hanfeiyang.framework.business.ddns.enetity.dto.DdnsDTO;
+import com.hanfeiyang.framework.business.ddns.service.IDdnsService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 
 @SpringBootTest
 class FrameworkNetApplicationTests {
@@ -16,7 +17,9 @@ class FrameworkNetApplicationTests {
 
     @Test
     void contextLoads() {
-        ddnsService.doDDNS(new ArrayList<>(Arrays.asList("*", "@")));
+        List<DdnsDTO> ddnsDTOList = new ArrayList<>();
+        ddnsDTOList.add(new DdnsDTO().setRecord("@").setDomainName("hanfeiyang.com"));
+        ddnsService.doDDNS(ddnsDTOList);
     }
 
 }

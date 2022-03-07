@@ -12,10 +12,10 @@ public class CodeGenerator {
         // 需要配置的字段
         String url = "jdbc:mysql://db.youngcloud.top:3306/framework_net?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true";
         String username = "root";
-        String password = "123456";
+        String password = "666666";
         String author = "hanfeiyang";
-        String packageName = "com.hanfeiyang.framework.ddns";
-        String[] tables = {"params"};
+        String packageName = "com.hanfeiyang.framework.business.cron";
+        String[] tables = {"schedul"};
         String outputDir = "D:\\myProj\\framework_net\\src\\main\\java\\";
         String outputXmlDir = "D:\\myProj\\framework_net\\src\\main\\resources\\mapper";
         FastAutoGenerator

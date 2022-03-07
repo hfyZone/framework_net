@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:mysql://db.youngcloud.top:3306/framework_net
     username: root
-    password: 123456
+    password: 666666
     driver-class-name: com.mysql.cj.jdbc.Driver
 mybatis-plus:
   configuration:
