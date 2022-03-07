@@ -1,4 +1,4 @@
-package com.hanfeiyang.framework.business.ddns.enetity;
+package com.hanfeiyang.framework.business.ddns.entity;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

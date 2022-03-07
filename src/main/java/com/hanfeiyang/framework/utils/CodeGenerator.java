@@ -14,10 +14,10 @@ public class CodeGenerator {
         String username = "root";
         String password = "666666";
         String author = "hanfeiyang";
-        String packageName = "com.hanfeiyang.framework.business.cron";
-        String[] tables = {"schedul"};
-        String outputDir = "D:\\myProj\\framework_net\\src\\main\\java\\";
-        String outputXmlDir = "D:\\myProj\\framework_net\\src\\main\\resources\\mapper";
+        String packageName = "com.hanfeiyang.framework.business.ddns";
+        String[] tables = {"domain"};
+        String outputDir = "/Users/hanfeiyang/IdeaProjects/framework_net/src/main/java";
+        String outputXmlDir = "/Users/hanfeiyang/IdeaProjects/framework_net/src/main/resources/mapper";
         FastAutoGenerator
                 .create(url,username, password)
                 .globalConfig(builder -> {

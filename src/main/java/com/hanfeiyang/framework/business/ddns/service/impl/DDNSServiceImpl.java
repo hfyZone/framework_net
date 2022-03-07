@@ -1,7 +1,7 @@
 package com.hanfeiyang.framework.business.ddns.service.impl;
 
-import com.hanfeiyang.framework.business.ddns.enetity.AliAccessKey;
-import com.hanfeiyang.framework.business.ddns.enetity.dto.DdnsDTO;
+import com.hanfeiyang.framework.business.ddns.entity.AliAccessKey;
+import com.hanfeiyang.framework.business.ddns.entity.dto.DomainDTO;
 import com.hanfeiyang.framework.business.ddns.service.IDdnsService;
 import com.hanfeiyang.framework.business.ddns.utils.DDNSUtils;
 import com.hanfeiyang.framework.business.param.entity.Param;
@@ -33,9 +33,9 @@ public class DDNSServiceImpl implements IDdnsService {
     }
 
     @Override
-    public void doDDNS(List<DdnsDTO> ddnsDTOList) {
+    public void doDDNS(List<DomainDTO> domainDTOList) {
         //  设置鉴权参数，初始化客户端
         AliAccessKey aliAccessKey = getAliAccessKey();
-        ddnsDTOList.forEach(ddnsDTO -> DDNSUtils.doDDNS(aliAccessKey, ddnsDTO.getRecord(), ddnsDTO.getDomainName()));
+        domainDTOList.forEach(domainDTO -> DDNSUtils.doDDNS(aliAccessKey, domainDTO.getDomainRecord(), domainDTO.getDomainName()));
     }
 }

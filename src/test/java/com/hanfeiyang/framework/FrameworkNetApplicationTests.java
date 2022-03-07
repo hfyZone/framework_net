@@ -1,6 +1,6 @@
 package com.hanfeiyang.framework;
 
-import com.hanfeiyang.framework.business.ddns.enetity.dto.DdnsDTO;
+import com.hanfeiyang.framework.business.ddns.entity.dto.DomainDTO;
 import com.hanfeiyang.framework.business.ddns.service.IDdnsService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +17,9 @@ class FrameworkNetApplicationTests {
 
     @Test
     void contextLoads() {
-        List<DdnsDTO> ddnsDTOList = new ArrayList<>();
-        ddnsDTOList.add(new DdnsDTO().setRecord("@").setDomainName("hanfeiyang.com"));
-        ddnsService.doDDNS(ddnsDTOList);
+        List<DomainDTO> domainDTOList = new ArrayList<>();
+        domainDTOList.add(new DomainDTO().setDomainRecord("@").setDomainName("hanfeiyang.com"));
+        ddnsService.doDDNS(domainDTOList);
     }
 
 }

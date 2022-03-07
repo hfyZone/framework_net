@@ -1,7 +1,7 @@
 package com.hanfeiyang.framework.business.ddns.service;
 
-import com.hanfeiyang.framework.business.ddns.enetity.AliAccessKey;
-import com.hanfeiyang.framework.business.ddns.enetity.dto.DdnsDTO;
+import com.hanfeiyang.framework.business.ddns.entity.AliAccessKey;
+import com.hanfeiyang.framework.business.ddns.entity.dto.DomainDTO;
 
 import java.util.List;
 
@@ -11,5 +11,5 @@ import java.util.List;
  */
 public interface IDdnsService {
     AliAccessKey getAliAccessKey();
-    void doDDNS(List<DdnsDTO> ddnsDTOList);
+    void doDDNS(List<DomainDTO> domainDTOList);
 }

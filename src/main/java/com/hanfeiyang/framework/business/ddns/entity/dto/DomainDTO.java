@@ -1,4 +1,4 @@
-package com.hanfeiyang.framework.business.ddns.enetity.dto;
+package com.hanfeiyang.framework.business.ddns.entity.dto;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -9,7 +9,7 @@ import lombok.experimental.Accessors;
  */
 @Data
 @Accessors(chain = true)
-public class DdnsDTO {
-    private String record;
+public class DomainDTO {
+    private String domainRecord;
     private String domainName;
 }

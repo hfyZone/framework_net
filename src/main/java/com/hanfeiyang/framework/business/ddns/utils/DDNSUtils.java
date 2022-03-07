@@ -9,7 +9,7 @@ import com.aliyuncs.alidns.model.v20150109.UpdateDomainRecordResponse;
 import com.aliyuncs.exceptions.ClientException;
 import com.aliyuncs.profile.DefaultProfile;
 import com.google.gson.Gson;
-import com.hanfeiyang.framework.business.ddns.enetity.AliAccessKey;
+import com.hanfeiyang.framework.business.ddns.entity.AliAccessKey;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.BufferedReader;
