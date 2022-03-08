@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/public.css}">
+    <title th:text="|当前表题为-${title}|">默认标题</title>
+</head>
+<body>
+<div class = "middleWrapper" th:text="${name}">网站信息</div>
+<div class = "middleWrapper">该站点仍在建设中，敬请期待<span class="dot">...</span></div>
+
+</body>
+</html>

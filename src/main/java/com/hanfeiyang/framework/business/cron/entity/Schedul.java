@@ -18,7 +18,7 @@ public class Schedul implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String uuid;
+    private String id;
 
     private String taskClassName;
 
@@ -41,7 +41,7 @@ public class Schedul implements Serializable {
     @Override
     public String toString() {
         return "Schedul{" +
-        "uuid=" + uuid +
+        "uuid=" + id +
         ", taskClassName=" + taskClassName +
         ", cronExpress=" + cronExpression +
         ", taskDescription=" + taskDescription +

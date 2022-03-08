@@ -1,5 +1,6 @@
 package com.hanfeiyang.framework;
 
+import com.hanfeiyang.framework.business.cron.service.ISchedulService;
 import com.hanfeiyang.framework.business.ddns.entity.dto.DomainDTO;
 import com.hanfeiyang.framework.business.ddns.service.IDdnsService;
 import org.junit.jupiter.api.Test;
@@ -15,11 +16,13 @@ class FrameworkNetApplicationTests {
     @Autowired
     IDdnsService ddnsService;
 
+    @Autowired
+    ISchedulService schedulService;
+
     @Test
     void contextLoads() {
-        List<DomainDTO> domainDTOList = new ArrayList<>();
-        domainDTOList.add(new DomainDTO().setDomainRecord("@").setDomainName("hanfeiyang.com"));
-        ddnsService.doDDNS(domainDTOList);
+        schedulService.list();
+        System.out.println();
     }
 
 }
