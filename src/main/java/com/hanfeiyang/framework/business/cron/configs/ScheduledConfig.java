@@ -29,6 +29,7 @@ public class ScheduledConfig implements SchedulingConfigurer {
     private ISchedulService schedulService;
     @Override
     public void configureTasks(ScheduledTaskRegistrar taskRegistrar) {
+        System.out.println("----------------------->配置类已加载<--------------");
         for (Schedul schedul : schedulService.list()) {
             Class<?> clazz;
             Object task;

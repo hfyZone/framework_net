@@ -1,15 +1,29 @@
 *{
     margin: 0;
     padding: 0;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
 }
 
 .middleWrapper{
     text-align: center;
-    width: 25vw;
-    background-color: pink;
+    width: auto;
     position: relative;
     top: 20vh;
     margin: 0 auto;
+}
+.title{
+    font-family: Lucida Handwriting;
+    font-size: 60px;
+    margin-bottom: 40px;
+    transition: all 1s;
+}
+.title
+.content{
+    font-family: 华文楷体;
+    font-size: 20px;
 }
 
 .dot {
@@ -39,4 +53,15 @@
 }
 .dot {
     animation: dot 3s infinite step-start;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 3vh;
+}
+.footer_text{
+    font-size: 20px;
+    font-weight: bold;
 }
