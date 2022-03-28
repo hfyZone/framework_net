@@ -3,6 +3,7 @@ package com.hanfeiyang.framework.business.thymeleaf;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author HanFeiYang
@@ -10,11 +11,18 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 @Controller
 public class ThymeLeafController {
-    @GetMapping("wait")//页面的url地址
+    @GetMapping("/")//页面的url地址
     public String getindex(Model model)//对应函数
     {
         model.addAttribute("title","韩飞洋的主站");
         model.addAttribute("name","hanfeiyang.com");
-        return "wait";//与templates中index.html对应
+        return "index";//与templates中index.html对应
+    }
+
+    @GetMapping("/ddns")
+    public String getddns(Model model){
+        model.addAttribute("title","DDNS");
+        model.addAttribute("name","DDNS");
+        return "function";
     }
 }
