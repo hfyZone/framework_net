@@ -25,4 +25,11 @@ public class ThymeLeafController {
         model.addAttribute("name","DDNS");
         return "function";
     }
+
+    @GetMapping("/function")
+    public String getFunction(Model model){
+        model.addAttribute("key","key");
+        model.addAttribute("value", "value");
+        return "function";
+    }
 }

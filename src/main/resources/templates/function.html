@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/css/public.css" th:href="@{/css/public.css}">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <!--<script type="application/javascript" src="js/function.js"/>-->
     <title th:text="|当前表题为-${title}|">默认标题</title>
 </head>
 <body>
-<table>
+<table class = "table table-bordered table-striped">
     <tr>
         <th>阿里密钥信息</th>
         <th>Another Heading</th>
     </tr>
-    <tr>
-        <td>row 1, cell 1</td>
-        <td>row 1, cell 2</td>
+        <td  th:text="${key}">${key}</td>
+        <td  th:text="${value}">${value}</td>
     </tr>
     <tr>
-        <td>row 2, cell 1</td>
-        <td>row 2, cell 2</td>
+        <td><button type="button" class="btn btn-default" >确认</button></td>
+        <td><button type="button" class="btn btn-primary">返回</button></td>
     </tr>
 </table>
 
